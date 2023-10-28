@@ -84,7 +84,7 @@ class TorInstaller:
         filepath = os.path.abspath(filepath)
 
         extract_dir = (os.path.abspath(extract_dir)
-                       if extract_dir else os.path.dirname(extract_dir))
+                       if extract_dir else os.path.dirname(filepath))
 
 
         logger.info('[+] decompress -> %r' % filepath)

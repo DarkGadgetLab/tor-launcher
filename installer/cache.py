@@ -21,8 +21,11 @@ class TorCache:
         self.encoding = 'utf-8'
         self.indent   = 2
 
-        self.__dirpath  = 'cache'
-        self.__filename = filename
+        self.__dirpath  = ''
+        self.__filename = os.path.basename(filename)
+
+        self.dirpath = 'cache'
+
 
     @property
     def data(self):
